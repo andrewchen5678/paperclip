@@ -20,11 +20,11 @@ module Paperclip
         validate_whitelist(record, attribute, value)
         validate_blacklist(record, attribute, value)
 
-        if record.errors.include? attribute
-          record.errors[attribute].each do |error|
-            record.errors.add base_attribute, error
-          end
-        end
+        #if record.errors.include? attribute
+        #  record.errors[attribute].each do |error|
+        #    record.errors.add base_attribute, error
+        #  end
+        #end
       end
 
       def validate_whitelist(record, attribute, value)
